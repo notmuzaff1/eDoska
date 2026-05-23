@@ -18,18 +18,13 @@ export const Lockdown: React.FC<LockdownProps> = ({ onUnlock }) => {
       el.requestFullscreen().catch(() => {});
     }
 
-    const onkey = (e: KeyboardEvent) => {
-      if (unlockedRef.current) return;
-      e.preventDefault();
-      e.stopPropagation();
-    };
-
     const onkeydown = (e: KeyboardEvent) => {
       if (unlockedRef.current) return;
-      if (
-        ['Escape', 'F11', 'F12'].includes(e.key) ||
-        e.altKey || e.ctrlKey || e.metaKey
-      ) {
+      const blocked = [
+        'Escape', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8',
+        'F9', 'F10', 'F11', 'F12',
+      ];
+      if (blocked.includes(e.key) || e.altKey || e.ctrlKey || e.metaKey) {
         e.preventDefault();
         e.stopPropagation();
         if (e.key === 'Escape' && el.requestFullscreen) {
@@ -57,8 +52,6 @@ export const Lockdown: React.FC<LockdownProps> = ({ onUnlock }) => {
     };
 
     document.addEventListener('keydown', onkeydown, true);
-    document.addEventListener('keyup', onkey, true);
-    document.addEventListener('keypress', onkey, true);
     document.addEventListener('contextmenu', oncontext);
     document.addEventListener('fullscreenchange', onfschange);
     document.addEventListener('visibilitychange', onvisibility);
@@ -67,8 +60,6 @@ export const Lockdown: React.FC<LockdownProps> = ({ onUnlock }) => {
 
     return () => {
       document.removeEventListener('keydown', onkeydown, true);
-      document.removeEventListener('keyup', onkey, true);
-      document.removeEventListener('keypress', onkey, true);
       document.removeEventListener('contextmenu', oncontext);
       document.removeEventListener('fullscreenchange', onfschange);
       document.removeEventListener('visibilitychange', onvisibility);
