@@ -210,7 +210,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ sessionData, currentLesson, on
                     }`}
                   >
                     <span className="text-slate-400">{lesson.timeStart}</span>
-                    <span className="text-white font-medium">{lesson.subject}</span>
+                    <div className="text-right">
+                      <span className="text-white font-medium block">{lesson.subject}</span>
+                      <span className="text-xs text-slate-500">{lesson.className}</span>
+                    </div>
                   </div>
                 ))
               ) : (

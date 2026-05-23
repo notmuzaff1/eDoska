@@ -101,10 +101,10 @@ export const ScheduleView: React.FC<ScheduleViewProps> = ({ currentLesson, onBac
                         </span>
                         <span className="flex items-center gap-1">
                           <MapPin className="w-3 h-3" />
-                          Room {lesson.room}
+                          {lesson.room}
                         </span>
                         <span className="flex items-center gap-1">
-                          <Clock className="w-3 h-3" />
+                          <BookOpen className="w-3 h-3" />
                           {lesson.className}
                         </span>
                       </div>

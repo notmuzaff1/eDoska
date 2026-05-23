@@ -241,7 +241,11 @@ export const LessonsView: React.FC<LessonsViewProps> = ({ currentLesson, onBack,
                     </span>
                     <span className="flex items-center gap-1">
                       <MapPin className="w-3 h-3" />
-                      Room {lesson.room}
+                      {lesson.room}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <BookOpen className="w-3 h-3" />
+                      {lesson.className}
                     </span>
                   </div>
                 </motion.button>
