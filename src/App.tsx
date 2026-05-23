@@ -1,5 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Lockdown } from './components/Lockdown';
 import { Lockscreen } from './components/Lockscreen';
 import { Dashboard } from './components/Dashboard';
 import { AdminPanel } from './components/AdminPanel';
@@ -10,6 +11,7 @@ import { supabase } from './lib/supabase';
 import { SessionData } from './types';
 
 function App() {
+  const [lockdown, setLockdown] = useState(true);
   const [sessionData, setSessionData] = useState<SessionData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [appMode, setAppMode] = useState<'classroom' | 'teacher'>('classroom');
@@ -109,6 +111,10 @@ function App() {
 
   if (appMode === 'teacher') {
     return <TelegramMiniApp />;
+  }
+
+  if (lockdown) {
+    return <Lockdown onUnlock={() => setLockdown(false)} />;
   }
 
   if (isLoading || !sessionData) {
