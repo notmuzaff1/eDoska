@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Lock, PenTool, Globe, Zap, Users, Sparkles } from 'lucide-react';
+import { Lock, PenTool, Globe, Zap, Users } from 'lucide-react';
 
 interface ActionDockProps {
   onLockScreen: () => void;
@@ -7,7 +7,6 @@ interface ActionDockProps {
   onBrowser: () => void;
   onAI: () => void;
   onStudentPicker: () => void;
-  onAILesson?: () => void;
 }
 
 export const ActionDock: React.FC<ActionDockProps> = ({
@@ -16,13 +15,11 @@ export const ActionDock: React.FC<ActionDockProps> = ({
   onBrowser,
   onAI,
   onStudentPicker,
-  onAILesson,
 }) => {
   const actions = [
     { id: 'whiteboard', label: 'Doska', icon: PenTool, color: 'from-orange-500 to-red-500', action: onWhiteboard },
     { id: 'browser', label: 'Brauzer', icon: Globe, color: 'from-green-500 to-emerald-500', action: onBrowser },
     { id: 'ai', label: 'AI Yordam', icon: Zap, color: 'from-yellow-500 to-orange-500', action: onAI },
-    ...(onAILesson ? [{ id: 'ailesson', label: 'AI Dars', icon: Sparkles, color: 'from-purple-500 to-pink-500', action: onAILesson }] : []),
     { id: 'students', label: "O'quvchi", icon: Users, color: 'from-violet-500 to-indigo-500', action: onStudentPicker },
     { id: 'lock', label: 'Qulf', icon: Lock, color: 'from-red-500 to-rose-500', action: onLockScreen },
   ];

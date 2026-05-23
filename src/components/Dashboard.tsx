@@ -208,7 +208,6 @@ export const Dashboard: React.FC<DashboardProps> = ({ sessionData, onLockScreen 
         onBrowser={() => setShowBrowser(true)}
         onAI={() => setShowAI(true)}
         onStudentPicker={() => setShowStudentPicker(true)}
-        onAILesson={() => setShowAILesson(true)}
       />
 
       {/* Modals */}

@@ -386,7 +386,7 @@ export const PdfReader: React.FC<PdfReaderProps> = ({ currentLesson, materials =
 
       {/* AI Presentation Slides */}
       {aiSlides.length > 0 && (
-        <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex flex-col min-h-0">
           {/* Slide navigation */}
           <div className="flex items-center justify-between px-4 py-2 bg-slate-900/50 border-b border-blue-500/20">
             <div className="flex items-center gap-2 text-xs text-slate-400">
@@ -423,13 +423,13 @@ export const PdfReader: React.FC<PdfReaderProps> = ({ currentLesson, materials =
             </div>
           </div>
 
-          <div className="flex-1 overflow-auto bg-slate-800/40 p-4 md:p-8">
+          <div className="flex-1 overflow-y-auto min-h-0 bg-slate-800/40 p-4 md:p-8">
             {!showQuiz && !showSummary ? (
               <motion.div
                 key={currentSlide}
                 initial={{ opacity: 0, x: 50 }}
                 animate={{ opacity: 1, x: 0 }}
-                className="max-w-4xl mx-auto h-full flex flex-col"
+                className="max-w-4xl mx-auto min-h-0 flex flex-col"
               >
                 <div className="flex-1 bg-gradient-to-br from-slate-800 to-slate-900 border border-blue-500/20 rounded-2xl p-8 md:p-12 flex flex-col justify-center shadow-2xl">
                   <div className="max-w-2xl mx-auto w-full">
@@ -445,7 +445,7 @@ export const PdfReader: React.FC<PdfReaderProps> = ({ currentLesson, materials =
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="max-w-3xl mx-auto space-y-6"
+                className="max-w-3xl mx-auto space-y-6 pb-8"
               >
                 <h3 className="text-xl font-bold text-white flex items-center gap-2">
                   <FileText className="w-5 h-5 text-cyan-400" /> Test
