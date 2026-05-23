@@ -98,6 +98,11 @@ export const scheduleManager = {
     return Array.from(subjects).sort();
   },
 
+  isSchoolOver: (): boolean => {
+    const now = new Date();
+    return now.getHours() >= 13;
+  },
+
   getTodaySchedule: (): Lesson[] => {
     const now = new Date();
     const dayOfWeek = getDayName(now.getDay());

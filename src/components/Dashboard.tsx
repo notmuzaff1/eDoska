@@ -55,16 +55,19 @@ export const Dashboard: React.FC<DashboardProps> = ({ sessionData, onLockScreen 
   const prevMaterialsKeyRef = useRef('');
 
   const currentLesson = scheduleManager.getCurrentLesson();
+  const schoolOver = scheduleManager.isSchoolOver();
 
   useEffect(() => {
+    if (!currentLesson || schoolOver) {
+      setLessonTimeRemaining(0);
+      return;
+    }
     const timer = setInterval(() => {
-      if (currentLesson) {
-        const remaining = scheduleManager.getTimeRemainingInLesson(currentLesson);
-        setLessonTimeRemaining(remaining.minutes * 60 + remaining.seconds);
-      }
+      const remaining = scheduleManager.getTimeRemainingInLesson(currentLesson);
+      setLessonTimeRemaining(remaining.minutes * 60 + remaining.seconds);
     }, 1000);
     return () => clearInterval(timer);
-  }, [currentLesson]);
+  }, [currentLesson, schoolOver]);
 
   // Load materials and students from Supabase (filtered by session_id)
   useEffect(() => {

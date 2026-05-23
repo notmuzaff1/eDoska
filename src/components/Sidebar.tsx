@@ -145,19 +145,36 @@ export const Sidebar: React.FC<SidebarProps> = ({ sessionData, currentLesson, on
           transition={{ delay: 0.4 }}
           className="bg-gradient-to-br from-blue-950/40 to-slate-900/40 backdrop-blur-md border border-blue-500/30 rounded-2xl p-4"
         >
-          <p className="text-xs text-slate-400 uppercase tracking-widest mb-3">DARS JARAYONI</p>
-          <div className="flex items-center justify-between mb-3">
-            <p className="font-semibold text-white">Dars: {progress}% tugallandi</p>
-            <p className="text-xs text-cyan-400">{progress}%</p>
-          </div>
-          <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
-            <motion.div
-              className="h-full bg-gradient-to-r from-cyan-400 to-blue-600"
-              initial={{ width: '0%' }}
-              animate={{ width: `${progress}%` }}
-              transition={{ duration: 1 }}
-            />
-          </div>
+          {scheduleManager.isSchoolOver() ? (
+            <>
+              <p className="text-xs text-slate-400 uppercase tracking-widest mb-3">DARS JARAYONI</p>
+              <div className="py-4 text-center">
+                <svg className="w-12 h-12 text-green-400 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="font-semibold text-white">Darslar tugadi</p>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-xs text-slate-400 uppercase tracking-widest mb-3">DARS JARAYONI</p>
+              <div className="flex items-center justify-between mb-3">
+                <p className="font-semibold text-white">Dars: {progress}% tugallandi</p>
+                <p className="text-xs text-cyan-400">{progress}%</p>
+              </div>
+              <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden">
+                <motion.div
+                  className="h-full bg-gradient-to-r from-cyan-400 to-blue-600"
+                  initial={{ width: '0%' }}
+                  animate={{ width: `${progress}%` }}
+                  transition={{ duration: 1 }}
+                />
+              </div>
+              <p className="text-xs text-slate-500 mt-2">
+                {currentLesson ? `${currentLesson.timeStart} - ${currentLesson.timeEnd}` : ''}
+              </p>
+            </>
+          )}
         </motion.div>
       </div>
 

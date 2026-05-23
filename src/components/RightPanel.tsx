@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Play, Download, FileText, FileCode, Link2, Send, Wifi, Gauge, Video, ExternalLink } from 'lucide-react';
 import { Lesson } from '@/types';
+import { scheduleManager } from '@/lib/scheduleManager';
 
 interface Material {
   id: string;
@@ -102,46 +103,61 @@ export const RightPanel: React.FC<RightPanelProps> = ({ timeRemaining, currentLe
           transition={{ delay: 0.45 }}
           className="bg-gradient-to-br from-blue-950/40 to-slate-900/40 backdrop-blur-md border border-blue-500/30 rounded-2xl p-6 text-center"
         >
-          <p className="text-xs text-slate-400 uppercase tracking-widest mb-4">DARS TAYMERI</p>
-          <div className="relative w-40 h-40 mx-auto mb-4">
-            <svg className="absolute inset-0 w-40 h-40" viewBox="0 0 160 160">
-              <circle cx="80" cy="80" r="70" fill="none" stroke="#1e293b" strokeWidth="8" />
-              <motion.circle
-                cx="80"
-                cy="80"
-                r="70"
-                fill="none"
-                stroke="url(#gradient)"
-                strokeWidth="8"
-                strokeDasharray="439.8"
-                initial={{ strokeDashoffset: 439.8 }}
-                animate={{ strokeDashoffset: 439.8 - (439.8 * progressPercent) / 100 }}
-                transition={{ duration: 0.5 }}
-                strokeLinecap="round"
-              />
-              <defs>
-                <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" stopColor="#06b6d4" />
-                  <stop offset="100%" stopColor="#2563eb" />
-                </linearGradient>
-              </defs>
-            </svg>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.5 }}
-                className="text-4xl font-bold text-white"
-              >
-                {Math.floor(timeRemaining / 60)}
-              </motion.div>
-              <p className="text-xs text-slate-400">Qolgan vaqt</p>
-            </div>
-          </div>
-          <div className="flex items-center justify-between text-xs text-slate-400 mb-3">
-            <span>Dars tugashiga</span>
-            <span className="text-cyan-400">{progressPercent}%</span>
-          </div>
+          {scheduleManager.isSchoolOver() ? (
+            <>
+              <p className="text-xs text-slate-400 uppercase tracking-widest mb-4">DARS TAYMERI</p>
+              <div className="py-6">
+                <svg className="w-16 h-16 text-green-400 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <p className="text-lg font-bold text-white">Darslar tugadi</p>
+                <p className="text-xs text-slate-400 mt-1">Bugungi barcha darslar yakunlandi</p>
+              </div>
+            </>
+          ) : (
+            <>
+              <p className="text-xs text-slate-400 uppercase tracking-widest mb-4">DARS TAYMERI</p>
+              <div className="relative w-40 h-40 mx-auto mb-4">
+                <svg className="absolute inset-0 w-40 h-40" viewBox="0 0 160 160">
+                  <circle cx="80" cy="80" r="70" fill="none" stroke="#1e293b" strokeWidth="8" />
+                  <motion.circle
+                    cx="80"
+                    cy="80"
+                    r="70"
+                    fill="none"
+                    stroke="url(#gradient)"
+                    strokeWidth="8"
+                    strokeDasharray="439.8"
+                    initial={{ strokeDashoffset: 439.8 }}
+                    animate={{ strokeDashoffset: 439.8 - (439.8 * progressPercent) / 100 }}
+                    transition={{ duration: 0.5 }}
+                    strokeLinecap="round"
+                  />
+                  <defs>
+                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#06b6d4" />
+                      <stop offset="100%" stopColor="#2563eb" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                <div className="absolute inset-0 flex flex-col items-center justify-center">
+                  <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="text-4xl font-bold text-white"
+                  >
+                    {Math.floor(timeRemaining / 60)}
+                  </motion.div>
+                  <p className="text-xs text-slate-400">Qolgan vaqt</p>
+                </div>
+              </div>
+              <div className="flex items-center justify-between text-xs text-slate-400 mb-3">
+                <span>Dars tugashiga</span>
+                <span className="text-cyan-400">{progressPercent}%</span>
+              </div>
+            </>
+          )}
         </motion.div>
       </div>
 
