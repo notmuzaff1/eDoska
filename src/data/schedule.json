@@ -3,270 +3,270 @@
     "dayOfWeek": "Monday",
     "timeStart": "08:00",
     "timeEnd": "08:45",
-    "subject": "English Literature",
-    "teacher": "R. Thompson",
-    "room": "101",
-    "className": "10-A"
+    "subject": "Algebra",
+    "teacher": "A. Rahimov",
+    "room": "201",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Monday",
-    "timeStart": "08:50",
-    "timeEnd": "09:35",
-    "subject": "Calculus",
-    "teacher": "J. Martinez",
-    "room": "203",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Monday",
-    "timeStart": "09:40",
-    "timeEnd": "10:25",
-    "subject": "Physics",
-    "teacher": "S. Anderson",
-    "room": "302",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Monday",
-    "timeStart": "10:35",
-    "timeEnd": "11:20",
-    "subject": "Computer Science",
-    "teacher": "D. Wilson",
-    "room": "Lab 1",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Monday",
-    "timeStart": "11:25",
-    "timeEnd": "12:10",
-    "subject": "History",
-    "teacher": "M. Davis",
+    "timeStart": "08:55",
+    "timeEnd": "09:40",
+    "subject": "O'zbek tili",
+    "teacher": "M. Tursunova",
     "room": "105",
-    "className": "10-A"
+    "className": "11-A"
   },
   {
-    "dayOfWeek": "Tuesday",
-    "timeStart": "08:00",
-    "timeEnd": "08:45",
-    "subject": "Chemistry",
-    "teacher": "L. Garcia",
-    "room": "Lab 2",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Tuesday",
-    "timeStart": "08:50",
-    "timeEnd": "09:35",
-    "subject": "Calculus",
-    "teacher": "J. Martinez",
-    "room": "203",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Tuesday",
-    "timeStart": "09:40",
-    "timeEnd": "10:25",
-    "subject": "Biology",
-    "teacher": "K. Brown",
-    "room": "Lab 3",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Tuesday",
-    "timeStart": "10:35",
-    "timeEnd": "11:20",
-    "subject": "English Literature",
-    "teacher": "R. Thompson",
-    "room": "101",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Tuesday",
-    "timeStart": "11:25",
-    "timeEnd": "12:10",
-    "subject": "Art",
-    "teacher": "P. Clark",
-    "room": "Studio",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Wednesday",
-    "timeStart": "08:00",
-    "timeEnd": "08:45",
-    "subject": "Physics",
-    "teacher": "S. Anderson",
+    "dayOfWeek": "Monday",
+    "timeStart": "09:50",
+    "timeEnd": "10:35",
+    "subject": "Fizika",
+    "teacher": "B. Komilov",
     "room": "302",
-    "className": "10-A"
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "10:55",
+    "timeEnd": "11:40",
+    "subject": "Ingliz tili",
+    "teacher": "S. Ahmedova",
+    "room": "204",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "11:50",
+    "timeEnd": "12:35",
+    "subject": "Jismoniy tarbiya",
+    "teacher": "T. Hasanov",
+    "room": "Sport zal",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Geometriya",
+    "teacher": "A. Rahimov",
+    "room": "201",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "08:55",
+    "timeEnd": "09:40",
+    "subject": "Kimyo",
+    "teacher": "L. Sobirova",
+    "room": "Lab-2",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "09:50",
+    "timeEnd": "10:35",
+    "subject": "Adabiyot",
+    "teacher": "M. Tursunova",
+    "room": "105",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "10:55",
+    "timeEnd": "11:40",
+    "subject": "Biologiya",
+    "teacher": "K. Nishonova",
+    "room": "Lab-1",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "11:50",
+    "timeEnd": "12:35",
+    "subject": "Rus tili",
+    "teacher": "E. Petrova",
+    "room": "206",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Wednesday",
-    "timeStart": "08:50",
-    "timeEnd": "09:35",
-    "subject": "Physical Education",
-    "teacher": "T. Harris",
-    "room": "Gym",
-    "className": "10-A"
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Fizika",
+    "teacher": "B. Komilov",
+    "room": "302",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Wednesday",
-    "timeStart": "09:40",
-    "timeEnd": "10:25",
-    "subject": "Geography",
-    "teacher": "N. White",
+    "timeStart": "08:55",
+    "timeEnd": "09:40",
+    "subject": "O'zbekiston tarixi",
+    "teacher": "N. Yuldasheva",
     "room": "107",
-    "className": "10-A"
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Wednesday",
-    "timeStart": "10:35",
-    "timeEnd": "11:20",
-    "subject": "Computer Science",
-    "teacher": "D. Wilson",
-    "room": "Lab 1",
-    "className": "10-A"
+    "timeStart": "09:50",
+    "timeEnd": "10:35",
+    "subject": "Informatika",
+    "teacher": "D. Xakimov",
+    "room": "Lab-3",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Wednesday",
-    "timeStart": "11:25",
-    "timeEnd": "12:10",
-    "subject": "Music",
-    "teacher": "A. Moore",
-    "room": "Music Room",
-    "className": "10-A"
+    "timeStart": "10:55",
+    "timeEnd": "11:40",
+    "subject": "Algebra",
+    "teacher": "A. Rahimov",
+    "room": "201",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "timeStart": "11:50",
+    "timeEnd": "12:35",
+    "subject": "Ingliz tili",
+    "teacher": "S. Ahmedova",
+    "room": "204",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Thursday",
     "timeStart": "08:00",
     "timeEnd": "08:45",
-    "subject": "Algebra",
-    "teacher": "J. Martinez",
-    "room": "203",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Thursday",
-    "timeStart": "08:50",
-    "timeEnd": "09:35",
-    "subject": "Chemistry",
-    "teacher": "L. Garcia",
-    "room": "Lab 2",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Thursday",
-    "timeStart": "09:40",
-    "timeEnd": "10:25",
-    "subject": "History",
-    "teacher": "M. Davis",
-    "room": "105",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Thursday",
-    "timeStart": "10:35",
-    "timeEnd": "11:20",
-    "subject": "Biology",
-    "teacher": "K. Brown",
-    "room": "Lab 3",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Thursday",
-    "timeStart": "11:25",
-    "timeEnd": "12:10",
-    "subject": "Algebra",
-    "teacher": "J. Martinez",
-    "room": "203",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Friday",
-    "timeStart": "08:00",
-    "timeEnd": "08:45",
-    "subject": "Calculus",
-    "teacher": "J. Martinez",
-    "room": "203",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Friday",
-    "timeStart": "08:50",
-    "timeEnd": "09:35",
-    "subject": "Physics",
-    "teacher": "S. Anderson",
-    "room": "302",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Friday",
-    "timeStart": "09:40",
-    "timeEnd": "10:25",
-    "subject": "English Literature",
-    "teacher": "R. Thompson",
-    "room": "101",
-    "className": "10-A"
-  },
-  {
-    "dayOfWeek": "Friday",
-    "timeStart": "10:35",
-    "timeEnd": "11:20",
-    "subject": "Foreign Language",
-    "teacher": "C. Taylor",
+    "subject": "Geografiya",
+    "teacher": "Z. Rahimova",
     "room": "108",
-    "className": "10-A"
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "08:55",
+    "timeEnd": "09:40",
+    "subject": "Kimyo",
+    "teacher": "L. Sobirova",
+    "room": "Lab-2",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "09:50",
+    "timeEnd": "10:35",
+    "subject": "Jahon tarixi",
+    "teacher": "N. Yuldasheva",
+    "room": "107",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "10:55",
+    "timeEnd": "11:40",
+    "subject": "Geometriya",
+    "teacher": "A. Rahimov",
+    "room": "201",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "11:50",
+    "timeEnd": "12:35",
+    "subject": "Chaqiriqqacha harbiy ta'lim",
+    "teacher": "I. Yo'ldoshev",
+    "room": "Sport zal",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Friday",
-    "timeStart": "11:25",
-    "timeEnd": "12:10",
-    "subject": "Physical Education",
-    "teacher": "T. Harris",
-    "room": "Gym",
-    "className": "10-A"
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Algebra",
+    "teacher": "A. Rahimov",
+    "room": "201",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "08:55",
+    "timeEnd": "09:40",
+    "subject": "Biologiya",
+    "teacher": "K. Nishonova",
+    "room": "Lab-1",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "09:50",
+    "timeEnd": "10:35",
+    "subject": "Adabiyot",
+    "teacher": "M. Tursunova",
+    "room": "105",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "10:55",
+    "timeEnd": "11:40",
+    "subject": "Fizika",
+    "teacher": "B. Komilov",
+    "room": "302",
+    "className": "11-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "11:50",
+    "timeEnd": "12:35",
+    "subject": "Rus tili",
+    "teacher": "E. Petrova",
+    "room": "206",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Saturday",
     "timeStart": "08:00",
     "timeEnd": "08:45",
-    "subject": "Computer Science",
-    "teacher": "D. Wilson",
-    "room": "Lab 1",
-    "className": "10-A"
+    "subject": "Geometriya",
+    "teacher": "A. Rahimov",
+    "room": "201",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Saturday",
-    "timeStart": "08:50",
-    "timeEnd": "09:35",
-    "subject": "Geography",
-    "teacher": "N. White",
-    "room": "107",
-    "className": "10-A"
+    "timeStart": "08:55",
+    "timeEnd": "09:40",
+    "subject": "O'zbek tili",
+    "teacher": "M. Tursunova",
+    "room": "105",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Saturday",
-    "timeStart": "09:40",
-    "timeEnd": "10:25",
-    "subject": "Art",
-    "teacher": "P. Clark",
-    "room": "Studio",
-    "className": "10-A"
+    "timeStart": "09:50",
+    "timeEnd": "10:35",
+    "subject": "Informatika",
+    "teacher": "D. Xakimov",
+    "room": "Lab-3",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Saturday",
-    "timeStart": "10:35",
-    "timeEnd": "11:20",
-    "subject": "Algebra",
-    "teacher": "J. Martinez",
-    "room": "203",
-    "className": "10-A"
+    "timeStart": "10:55",
+    "timeEnd": "11:40",
+    "subject": "Jismoniy tarbiya",
+    "teacher": "T. Hasanov",
+    "room": "Sport zal",
+    "className": "11-A"
   },
   {
     "dayOfWeek": "Saturday",
-    "timeStart": "11:25",
-    "timeEnd": "12:10",
-    "subject": "Music",
-    "teacher": "A. Moore",
-    "room": "Music Room",
-    "className": "10-A"
+    "timeStart": "11:50",
+    "timeEnd": "12:35",
+    "subject": "Geografiya",
+    "teacher": "Z. Rahimova",
+    "room": "108",
+    "className": "11-A"
   }
 ]
