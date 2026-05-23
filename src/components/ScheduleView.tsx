@@ -12,13 +12,14 @@ interface ScheduleViewProps {
 export const ScheduleView: React.FC<ScheduleViewProps> = ({ currentLesson, onBack }) => {
   const days = ['Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma', 'Shanba'];
   const dayNames = ['Du', 'Se', 'Cho', 'Pay', 'Ju', 'Sha'];
+  const dayEn = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const todayIndex = (() => {
     const d = new Date().getDay();
     return d === 0 ? 5 : d - 1;
   })();
   const [selectedDay, setSelectedDay] = useState(todayIndex);
 
-  const scheduleByDay = days.map((day) => scheduleManager.getLessonsByDay(day));
+  const scheduleByDay = dayEn.map((day) => scheduleManager.getLessonsByDay(day));
 
   return (
     <motion.div
