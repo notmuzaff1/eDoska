@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const TEACHER_IDS = ['ID001', 'ID002', 'ID003', 'ID004'];
+const TEACHER_PINS = ['001', '002', '003', '004'];
 
 interface KioskLockProps {
   isLocked: boolean;
@@ -94,13 +94,16 @@ export const KioskLock: React.FC<KioskLockProps> = ({ isLocked, onUnlock }) => {
     };
   }, [isLocked, requestFullscreen]);
 
+  const unlock = () => {
+    setPin('');
+    setError('');
+    exitFullscreen();
+    onUnlock();
+  };
+
   const handleSubmit = () => {
-    const normalized = pin.trim().toUpperCase();
-    if (TEACHER_IDS.includes(normalized)) {
-      setError('');
-      setPin('');
-      exitFullscreen();
-      onUnlock();
+    if (TEACHER_PINS.includes(pin)) {
+      unlock();
     } else {
       setError('Notoʻgʻri PIN. Qaytadan urinib koʻring.');
       setPin('');
@@ -109,24 +112,19 @@ export const KioskLock: React.FC<KioskLockProps> = ({ isLocked, onUnlock }) => {
   };
 
   const fillPin = (val: string) => {
-    if (pin.length < 5) {
-      const next = pin + val;
-      setPin(next);
-      setError('');
-      if (next.length === 5) {
-        setTimeout(() => {
-          const normalized = next.trim().toUpperCase();
-          if (TEACHER_IDS.includes(normalized)) {
-            setError('');
-            setPin('');
-            exitFullscreen();
-            onUnlock();
-          } else {
-            setError('Notoʻgʻri PIN. Qaytadan urinib koʻring.');
-            setPin('');
-          }
-        }, 200);
-      }
+    if (pin.length >= 3) return;
+    const next = pin + val;
+    setPin(next);
+    setError('');
+    if (next.length === 3) {
+      setTimeout(() => {
+        if (TEACHER_PINS.includes(next)) {
+          unlock();
+        } else {
+          setError('Notoʻgʻri PIN. Qaytadan urinib koʻring.');
+          setPin('');
+        }
+      }, 200);
     }
   };
 
@@ -161,11 +159,11 @@ export const KioskLock: React.FC<KioskLockProps> = ({ isLocked, onUnlock }) => {
             Dosk qulflangan
           </h1>
           <p className="text-gray-400 text-sm text-center max-w-xs">
-            Oʻqituvchi PIN-kodingizni kiriting
+            3 xonali PIN-kodingizni kiriting
           </p>
 
           <div className="flex gap-3 items-center justify-center mt-2">
-            {[0, 1, 2, 3, 4].map((i) => (
+            {[0, 1, 2].map((i) => (
               <div
                 key={i}
                 className={`w-4 h-4 rounded-full border-2 transition-colors ${
@@ -218,7 +216,7 @@ export const KioskLock: React.FC<KioskLockProps> = ({ isLocked, onUnlock }) => {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={handleSubmit}
-            disabled={pin.length !== 5}
+            disabled={pin.length !== 3}
             className="mt-2 px-10 py-3 rounded-xl bg-yellow-500 text-black font-bold text-lg
               hover:bg-yellow-400 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
           >
@@ -241,11 +239,11 @@ export const KioskLock: React.FC<KioskLockProps> = ({ isLocked, onUnlock }) => {
         <input
           ref={inputRef}
           type="text"
-          inputMode="text"
+          inputMode="numeric"
           autoComplete="off"
           value={pin}
           onChange={(e) => {
-            const val = e.target.value.replace(/[^a-zA-Z0-9]/g, '').toUpperCase().slice(0, 5);
+            const val = e.target.value.replace(/\D/g, '').slice(0, 3);
             setPin(val);
             setError('');
           }}
