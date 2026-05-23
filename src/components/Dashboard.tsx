@@ -17,7 +17,7 @@ import { AnalyticsView } from './AnalyticsView';
 import { LessonsView } from './LessonsView';
 import { SettingsModal } from './SettingsModal';
 import { Toast } from './Toast';
-import { KioskLock } from './KioskLock';
+import { PinLock } from './PinLock';
 
 type MainView = 'pdf' | 'schedule' | 'lessons' | 'analytics';
 
@@ -46,10 +46,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ sessionData, onLockScreen 
   const [showAI, setShowAI] = useState(false);
   const [showAILesson, setShowAILesson] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [kioskLocked, setKioskLocked] = useState(false);
-
-  const handleKioskLock = () => setKioskLocked(true);
-  const handleKioskUnlock = () => setKioskLocked(false);
+  const [pinLocked, setPinLocked] = useState(false);
 
   // Material notification toast
   const [toastMsg, setToastMsg] = useState('');
@@ -197,14 +194,14 @@ export const Dashboard: React.FC<DashboardProps> = ({ sessionData, onLockScreen 
             materials={materials}
             onOpenBrowser={() => setShowBrowser(true)}
             onOpenWhiteboard={() => setShowWhiteboard(true)}
-            onLockScreen={handleKioskLock}
+            onLockScreen={() => setPinLocked(true)}
           />
         </div>
       </motion.div>
 
       {/* Action Dock */}
       <ActionDock
-        onLockScreen={handleKioskLock}
+        onLockScreen={() => setPinLocked(true)}
         onWhiteboard={() => setShowWhiteboard(true)}
         onBrowser={() => setShowBrowser(true)}
         onAI={() => setShowAI(true)}
@@ -235,7 +232,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ sessionData, onLockScreen 
         } : undefined}
         onClose={() => { setToastVisible(false); setToastNewMaterial(null); }}
       />
-      <KioskLock isLocked={kioskLocked} onUnlock={handleKioskUnlock} />
+      <PinLock isLocked={pinLocked} onUnlock={() => setPinLocked(false)} />
     </>
   );
 };
