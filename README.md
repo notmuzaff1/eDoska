@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # eDoska - AI-Powered Smart Classroom Platform
 
 A cutting-edge smart classroom platform combining real-time QR authentication, premium dark-mode UI, AI lesson generation, and interactive teaching tools. Designed for modern 4K smart boards with a "Google Classroom + Apple Classroom + AI Smart Board OS" experience.
@@ -320,3 +321,6 @@ Proprietary - eDoska Platform
 ## Support
 
 For issues or questions, contact the development team.
+=======
+# eDoska
+>>>>>>> 41d59caf838e3bef82cb979fab4f8b1035c9a505
