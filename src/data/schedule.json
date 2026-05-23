@@ -1,0 +1,272 @@
+[
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "English Literature",
+    "teacher": "R. Thompson",
+    "room": "101",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "08:50",
+    "timeEnd": "09:35",
+    "subject": "Calculus",
+    "teacher": "J. Martinez",
+    "room": "203",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "09:40",
+    "timeEnd": "10:25",
+    "subject": "Physics",
+    "teacher": "S. Anderson",
+    "room": "302",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "10:35",
+    "timeEnd": "11:20",
+    "subject": "Computer Science",
+    "teacher": "D. Wilson",
+    "room": "Lab 1",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Monday",
+    "timeStart": "11:25",
+    "timeEnd": "12:10",
+    "subject": "History",
+    "teacher": "M. Davis",
+    "room": "105",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Chemistry",
+    "teacher": "L. Garcia",
+    "room": "Lab 2",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "08:50",
+    "timeEnd": "09:35",
+    "subject": "Calculus",
+    "teacher": "J. Martinez",
+    "room": "203",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "09:40",
+    "timeEnd": "10:25",
+    "subject": "Biology",
+    "teacher": "K. Brown",
+    "room": "Lab 3",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "10:35",
+    "timeEnd": "11:20",
+    "subject": "English Literature",
+    "teacher": "R. Thompson",
+    "room": "101",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Tuesday",
+    "timeStart": "11:25",
+    "timeEnd": "12:10",
+    "subject": "Art",
+    "teacher": "P. Clark",
+    "room": "Studio",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Physics",
+    "teacher": "S. Anderson",
+    "room": "302",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "timeStart": "08:50",
+    "timeEnd": "09:35",
+    "subject": "Physical Education",
+    "teacher": "T. Harris",
+    "room": "Gym",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "timeStart": "09:40",
+    "timeEnd": "10:25",
+    "subject": "Geography",
+    "teacher": "N. White",
+    "room": "107",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "timeStart": "10:35",
+    "timeEnd": "11:20",
+    "subject": "Computer Science",
+    "teacher": "D. Wilson",
+    "room": "Lab 1",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Wednesday",
+    "timeStart": "11:25",
+    "timeEnd": "12:10",
+    "subject": "Music",
+    "teacher": "A. Moore",
+    "room": "Music Room",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Algebra",
+    "teacher": "J. Martinez",
+    "room": "203",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "08:50",
+    "timeEnd": "09:35",
+    "subject": "Chemistry",
+    "teacher": "L. Garcia",
+    "room": "Lab 2",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "09:40",
+    "timeEnd": "10:25",
+    "subject": "History",
+    "teacher": "M. Davis",
+    "room": "105",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "10:35",
+    "timeEnd": "11:20",
+    "subject": "Biology",
+    "teacher": "K. Brown",
+    "room": "Lab 3",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Thursday",
+    "timeStart": "11:25",
+    "timeEnd": "12:10",
+    "subject": "Algebra",
+    "teacher": "J. Martinez",
+    "room": "203",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Calculus",
+    "teacher": "J. Martinez",
+    "room": "203",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "08:50",
+    "timeEnd": "09:35",
+    "subject": "Physics",
+    "teacher": "S. Anderson",
+    "room": "302",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "09:40",
+    "timeEnd": "10:25",
+    "subject": "English Literature",
+    "teacher": "R. Thompson",
+    "room": "101",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "10:35",
+    "timeEnd": "11:20",
+    "subject": "Foreign Language",
+    "teacher": "C. Taylor",
+    "room": "108",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Friday",
+    "timeStart": "11:25",
+    "timeEnd": "12:10",
+    "subject": "Physical Education",
+    "teacher": "T. Harris",
+    "room": "Gym",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Saturday",
+    "timeStart": "08:00",
+    "timeEnd": "08:45",
+    "subject": "Computer Science",
+    "teacher": "D. Wilson",
+    "room": "Lab 1",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Saturday",
+    "timeStart": "08:50",
+    "timeEnd": "09:35",
+    "subject": "Geography",
+    "teacher": "N. White",
+    "room": "107",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Saturday",
+    "timeStart": "09:40",
+    "timeEnd": "10:25",
+    "subject": "Art",
+    "teacher": "P. Clark",
+    "room": "Studio",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Saturday",
+    "timeStart": "10:35",
+    "timeEnd": "11:20",
+    "subject": "Algebra",
+    "teacher": "J. Martinez",
+    "room": "203",
+    "className": "10-A"
+  },
+  {
+    "dayOfWeek": "Saturday",
+    "timeStart": "11:25",
+    "timeEnd": "12:10",
+    "subject": "Music",
+    "teacher": "A. Moore",
+    "room": "Music Room",
+    "className": "10-A"
+  }
+]
